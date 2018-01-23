@@ -1,0 +1,161 @@
+c:\documents\visual studio 2015\Projects\Turbulence\mainWindow\bin\Debug\mainWindow.exe.config
+c:\documents\visual studio 2015\Projects\Turbulence\mainWindow\bin\Debug\mainWindow.exe
+c:\documents\visual studio 2015\Projects\Turbulence\mainWindow\bin\Debug\mainWindow.pdb
+c:\documents\visual studio 2015\Projects\Turbulence\mainWindow\obj\Debug\MainWindow.g.cs
+c:\documents\visual studio 2015\Projects\Turbulence\mainWindow\obj\Debug\App.g.cs
+c:\documents\visual studio 2015\Projects\Turbulence\mainWindow\obj\Debug\mainWindow_MarkupCompile.cache
+c:\documents\visual studio 2015\Projects\Turbulence\mainWindow\obj\Debug\mainWindow_MarkupCompile.lref
+c:\documents\visual studio 2015\Projects\Turbulence\mainWindow\obj\Debug\MainWindow.baml
+c:\documents\visual studio 2015\Projects\Turbulence\mainWindow\obj\Debug\mainWindow.g.resources
+c:\documents\visual studio 2015\Projects\Turbulence\mainWindow\obj\Debug\mainWindow.Properties.Resources.resources
+c:\documents\visual studio 2015\Projects\Turbulence\mainWindow\obj\Debug\mainWindow.csproj.GenerateResource.Cache
+c:\documents\visual studio 2015\Projects\Turbulence\mainWindow\obj\Debug\mainWindow.exe
+c:\documents\visual studio 2015\Projects\Turbulence\mainWindow\obj\Debug\mainWindow.pdb
+c:\documents\visual studio 2015\Projects\Turbulence\mainWindow\obj\Debug\LabelTextBox.baml
+c:\documents\visual studio 2015\Projects\Turbulence\mainWindow\obj\Debug\LabelTextBox.g.cs
+c:\documents\visual studio 2015\Projects\Turbulence\mainWindow\obj\Debug\GeneratedInternalTypeHelper.g.cs
+c:\documents\visual studio 2015\Projects\Turbulence\mainWindow\obj\Debug\mainWindow.csprojResolveAssemblyReference.cache
+c:\documents\visual studio 2015\Projects\Turbulence\mainWindow\obj\Debug\ImageShow.g.cs
+c:\documents\visual studio 2015\Projects\Turbulence\mainWindow\obj\Debug\ImageShow.baml
+F:\Turbulence\mainWindow\bin\Debug\mainWindow.exe.config
+F:\Turbulence\mainWindow\obj\Debug\mainWindow.exe
+F:\Turbulence\mainWindow\obj\Debug\mainWindow.pdb
+F:\Turbulence\mainWindow\obj\Debug\mainWindow.csprojResolveAssemblyReference.cache
+F:\Turbulence\mainWindow\obj\Debug\ImageShow.g.cs
+F:\Turbulence\mainWindow\obj\Debug\LabelTextBox.g.cs
+F:\Turbulence\mainWindow\obj\Debug\MainWindow.g.cs
+F:\Turbulence\mainWindow\obj\Debug\App.g.cs
+F:\Turbulence\mainWindow\obj\Debug\GeneratedInternalTypeHelper.g.cs
+F:\Turbulence\mainWindow\obj\Debug\mainWindow_MarkupCompile.cache
+F:\Turbulence\mainWindow\obj\Debug\mainWindow_MarkupCompile.lref
+F:\Turbulence\mainWindow\bin\Debug\mainWindow.exe
+F:\Turbulence\mainWindow\bin\Debug\mainWindow.pdb
+F:\Turbulence\mainWindow\obj\Debug\ImageShow.baml
+F:\Turbulence\mainWindow\obj\Debug\LabelTextBox.baml
+F:\Turbulence\mainWindow\obj\Debug\MainWindow.baml
+F:\Turbulence\mainWindow\obj\Debug\mainWindow.g.resources
+F:\Turbulence\mainWindow\obj\Debug\mainWindow.Properties.Resources.resources
+F:\Turbulence\mainWindow\obj\Debug\mainWindow.csproj.GenerateResource.Cache
+C:\Users\chern\Documents\GitHub\Turbulence\mainWindow\bin\Debug\mainWindow.exe.config
+C:\Users\chern\Documents\GitHub\Turbulence\mainWindow\obj\Debug\mainWindow.exe
+C:\Users\chern\Documents\GitHub\Turbulence\mainWindow\obj\Debug\mainWindow.pdb
+C:\Users\chern\Documents\GitHub\Turbulence\mainWindow\bin\Debug\mainWindow.exe
+C:\Users\chern\Documents\GitHub\Turbulence\mainWindow\bin\Debug\mainWindow.pdb
+C:\Users\chern\Documents\GitHub\Turbulence\mainWindow\obj\Debug\LabelTextBox.g.cs
+C:\Users\chern\Documents\GitHub\Turbulence\mainWindow\obj\Debug\MainWindow.g.cs
+C:\Users\chern\Documents\GitHub\Turbulence\mainWindow\obj\Debug\App.g.cs
+C:\Users\chern\Documents\GitHub\Turbulence\mainWindow\obj\Debug\GeneratedInternalTypeHelper.g.cs
+C:\Users\chern\Documents\GitHub\Turbulence\mainWindow\obj\Debug\mainWindow_MarkupCompile.cache
+C:\Users\chern\Documents\GitHub\Turbulence\mainWindow\obj\Debug\mainWindow_MarkupCompile.lref
+C:\Users\chern\Documents\GitHub\Turbulence\mainWindow\obj\Debug\LabelTextBox.baml
+C:\Users\chern\Documents\GitHub\Turbulence\mainWindow\obj\Debug\MainWindow.baml
+C:\Users\chern\Documents\GitHub\Turbulence\mainWindow\obj\Debug\mainWindow.g.resources
+C:\Users\chern\Documents\GitHub\Turbulence\mainWindow\obj\Debug\mainWindow.Properties.Resources.resources
+C:\Users\chern\Documents\GitHub\Turbulence\mainWindow\obj\Debug\mainWindow.csproj.GenerateResource.Cache
+C:\Users\chern\Documents\GitHub\Turbulence\mainWindow\bin\Debug\OxyPlot.dll
+C:\Users\chern\Documents\GitHub\Turbulence\mainWindow\bin\Debug\OxyPlot.Wpf.dll
+C:\Users\chern\Documents\GitHub\Turbulence\mainWindow\bin\Debug\OxyPlot.Xps.dll
+C:\Users\chern\Documents\GitHub\Turbulence\mainWindow\bin\Debug\OxyPlot.pdb
+C:\Users\chern\Documents\GitHub\Turbulence\mainWindow\bin\Debug\OxyPlot.xml
+C:\Users\chern\Documents\GitHub\Turbulence\mainWindow\bin\Debug\OxyPlot.Wpf.pdb
+C:\Users\chern\Documents\GitHub\Turbulence\mainWindow\bin\Debug\OxyPlot.Wpf.xml
+C:\Users\chern\Documents\GitHub\Turbulence\mainWindow\bin\Debug\OxyPlot.Xps.pdb
+C:\Users\chern\Documents\GitHub\Turbulence\mainWindow\bin\Debug\OxyPlot.Xps.xml
+C:\Users\chern\Documents\GitHub\Turbulence\mainWindow\bin\Debug\GalaSoft.MvvmLight.dll
+C:\Users\chern\Documents\GitHub\Turbulence\mainWindow\bin\Debug\GalaSoft.MvvmLight.Platform.dll
+C:\Users\chern\Documents\GitHub\Turbulence\mainWindow\bin\Debug\System.Windows.Interactivity.dll
+C:\Users\chern\Documents\GitHub\Turbulence\mainWindow\bin\Debug\GalaSoft.MvvmLight.pdb
+C:\Users\chern\Documents\GitHub\Turbulence\mainWindow\bin\Debug\GalaSoft.MvvmLight.xml
+C:\Users\chern\Documents\GitHub\Turbulence\mainWindow\bin\Debug\GalaSoft.MvvmLight.Platform.pdb
+C:\Users\chern\Documents\GitHub\Turbulence\mainWindow\bin\Debug\GalaSoft.MvvmLight.Platform.xml
+C:\Users\chern\Documents\GitHub\Turbulence\mainWindow\bin\Debug\AxInterop.AcroPDFLib.dll
+C:\Users\chern\Documents\GitHub\Turbulence\mainWindow\bin\Debug\log4net.dll
+C:\Users\chern\Documents\GitHub\Turbulence\mainWindow\bin\Debug\MoonPdfLib.dll
+C:\Users\chern\Documents\GitHub\Turbulence\mainWindow\bin\Debug\MouseKeyboardActivityMonitor.dll
+C:\Users\chern\Documents\GitHub\Turbulence\mainWindow\bin\Debug\WPFPdfViewer.dll
+C:\Users\chern\Documents\GitHub\Turbulence\mainWindow\bin\Debug\log4net.xml
+C:\Users\chern\Documents\GitHub\Turbulence\mainWindow\bin\Debug\mainWindow.exe.manifest
+C:\Users\chern\Documents\GitHub\Turbulence\mainWindow\bin\Debug\mainWindow.application
+C:\Users\chern\Documents\GitHub\Turbulence\mainWindow\obj\Debug\mainWindow.TrustInfo.xml
+C:\Users\chern\Documents\GitHub\Turbulence\mainWindow\obj\Debug\mainWindow.exe.manifest
+C:\Users\chern\Documents\GitHub\Turbulence\mainWindow\obj\Debug\mainWindow.application
+C:\Users\Andrey\Documents\GitHub\Turbulence\mainWindow\bin\Debug\mainWindow.exe.config
+C:\Users\Andrey\Documents\GitHub\Turbulence\mainWindow\obj\Debug\mainWindow.exe
+C:\Users\Andrey\Documents\GitHub\Turbulence\mainWindow\obj\Debug\mainWindow.pdb
+C:\Users\Andrey\Documents\GitHub\Turbulence\mainWindow\bin\Debug\mainWindow.exe.manifest
+C:\Users\Andrey\Documents\GitHub\Turbulence\mainWindow\bin\Debug\mainWindow.application
+C:\Users\Andrey\Documents\GitHub\Turbulence\mainWindow\bin\Debug\mainWindow.exe
+C:\Users\Andrey\Documents\GitHub\Turbulence\mainWindow\bin\Debug\mainWindow.pdb
+C:\Users\Andrey\Documents\GitHub\Turbulence\mainWindow\bin\Debug\GalaSoft.MvvmLight.Platform.dll
+C:\Users\Andrey\Documents\GitHub\Turbulence\mainWindow\bin\Debug\MouseKeyboardActivityMonitor.dll
+C:\Users\Andrey\Documents\GitHub\Turbulence\mainWindow\bin\Debug\OxyPlot.dll
+C:\Users\Andrey\Documents\GitHub\Turbulence\mainWindow\bin\Debug\OxyPlot.Wpf.dll
+C:\Users\Andrey\Documents\GitHub\Turbulence\mainWindow\bin\Debug\OxyPlot.Xps.dll
+C:\Users\Andrey\Documents\GitHub\Turbulence\mainWindow\bin\Debug\System.Windows.Interactivity.dll
+C:\Users\Andrey\Documents\GitHub\Turbulence\mainWindow\bin\Debug\GalaSoft.MvvmLight.dll
+C:\Users\Andrey\Documents\GitHub\Turbulence\mainWindow\bin\Debug\GalaSoft.MvvmLight.Platform.pdb
+C:\Users\Andrey\Documents\GitHub\Turbulence\mainWindow\bin\Debug\GalaSoft.MvvmLight.Platform.xml
+C:\Users\Andrey\Documents\GitHub\Turbulence\mainWindow\bin\Debug\OxyPlot.pdb
+C:\Users\Andrey\Documents\GitHub\Turbulence\mainWindow\bin\Debug\OxyPlot.xml
+C:\Users\Andrey\Documents\GitHub\Turbulence\mainWindow\bin\Debug\OxyPlot.Wpf.pdb
+C:\Users\Andrey\Documents\GitHub\Turbulence\mainWindow\bin\Debug\OxyPlot.Wpf.xml
+C:\Users\Andrey\Documents\GitHub\Turbulence\mainWindow\bin\Debug\OxyPlot.Xps.pdb
+C:\Users\Andrey\Documents\GitHub\Turbulence\mainWindow\bin\Debug\OxyPlot.Xps.xml
+C:\Users\Andrey\Documents\GitHub\Turbulence\mainWindow\bin\Debug\GalaSoft.MvvmLight.pdb
+C:\Users\Andrey\Documents\GitHub\Turbulence\mainWindow\bin\Debug\GalaSoft.MvvmLight.xml
+C:\Users\Andrey\Documents\GitHub\Turbulence\mainWindow\obj\Debug\LabelTextBox.g.cs
+C:\Users\Andrey\Documents\GitHub\Turbulence\mainWindow\obj\Debug\MainWindow.g.cs
+C:\Users\Andrey\Documents\GitHub\Turbulence\mainWindow\obj\Debug\App.g.cs
+C:\Users\Andrey\Documents\GitHub\Turbulence\mainWindow\obj\Debug\GeneratedInternalTypeHelper.g.cs
+C:\Users\Andrey\Documents\GitHub\Turbulence\mainWindow\obj\Debug\mainWindow_MarkupCompile.cache
+C:\Users\Andrey\Documents\GitHub\Turbulence\mainWindow\obj\Debug\mainWindow_MarkupCompile.lref
+C:\Users\Andrey\Documents\GitHub\Turbulence\mainWindow\obj\Debug\LabelTextBox.baml
+C:\Users\Andrey\Documents\GitHub\Turbulence\mainWindow\obj\Debug\MainWindow.baml
+C:\Users\Andrey\Documents\GitHub\Turbulence\mainWindow\obj\Debug\mainWindow.g.resources
+C:\Users\Andrey\Documents\GitHub\Turbulence\mainWindow\obj\Debug\mainWindow.Properties.Resources.resources
+C:\Users\Andrey\Documents\GitHub\Turbulence\mainWindow\obj\Debug\mainWindow.csproj.GenerateResource.Cache
+C:\Users\Andrey\Documents\GitHub\Turbulence\mainWindow\obj\Debug\mainWindow.TrustInfo.xml
+C:\Users\Andrey\Documents\GitHub\Turbulence\mainWindow\obj\Debug\mainWindow.exe.manifest
+C:\Users\Andrey\Documents\GitHub\Turbulence\mainWindow\obj\Debug\mainWindow.application
+C:\Users\Andrey\Documents\GitHub\Turbulence\mainWindow\obj\Debug\mainWindow.csprojResolveAssemblyReference.cache
+D:\Users\chern\Desktop\Учеба\5 курс\Непр матмодели\SIR-Vact\mainWindow\bin\Debug\mainWindow.exe.config
+D:\Users\chern\Desktop\Учеба\5 курс\Непр матмодели\SIR-Vact\mainWindow\obj\Debug\mainWindow.exe
+D:\Users\chern\Desktop\Учеба\5 курс\Непр матмодели\SIR-Vact\mainWindow\obj\Debug\mainWindow.pdb
+D:\Users\chern\Desktop\Учеба\5 курс\Непр матмодели\SIR-Vact\mainWindow\obj\Debug\LabelTextBox.baml
+D:\Users\chern\Desktop\Учеба\5 курс\Непр матмодели\SIR-Vact\mainWindow\obj\Debug\LabelTextBox.g.cs
+D:\Users\chern\Desktop\Учеба\5 курс\Непр матмодели\SIR-Vact\mainWindow\obj\Debug\MainWindow.g.cs
+D:\Users\chern\Desktop\Учеба\5 курс\Непр матмодели\SIR-Vact\mainWindow\obj\Debug\App.g.cs
+D:\Users\chern\Desktop\Учеба\5 курс\Непр матмодели\SIR-Vact\mainWindow\obj\Debug\GeneratedInternalTypeHelper.g.cs
+D:\Users\chern\Desktop\Учеба\5 курс\Непр матмодели\SIR-Vact\mainWindow\obj\Debug\mainWindow_MarkupCompile.cache
+D:\Users\chern\Desktop\Учеба\5 курс\Непр матмодели\SIR-Vact\mainWindow\obj\Debug\mainWindow_MarkupCompile.lref
+D:\Users\chern\Desktop\Учеба\5 курс\Непр матмодели\SIR-Vact\mainWindow\bin\Debug\mainWindow.exe.manifest
+D:\Users\chern\Desktop\Учеба\5 курс\Непр матмодели\SIR-Vact\mainWindow\bin\Debug\mainWindow.application
+D:\Users\chern\Desktop\Учеба\5 курс\Непр матмодели\SIR-Vact\mainWindow\bin\Debug\mainWindow.exe
+D:\Users\chern\Desktop\Учеба\5 курс\Непр матмодели\SIR-Vact\mainWindow\bin\Debug\mainWindow.pdb
+D:\Users\chern\Desktop\Учеба\5 курс\Непр матмодели\SIR-Vact\mainWindow\bin\Debug\GalaSoft.MvvmLight.Platform.dll
+D:\Users\chern\Desktop\Учеба\5 курс\Непр матмодели\SIR-Vact\mainWindow\bin\Debug\Microsoft.Research.Oslo.dll
+D:\Users\chern\Desktop\Учеба\5 курс\Непр матмодели\SIR-Vact\mainWindow\bin\Debug\MouseKeyboardActivityMonitor.dll
+D:\Users\chern\Desktop\Учеба\5 курс\Непр матмодели\SIR-Vact\mainWindow\bin\Debug\OxyPlot.dll
+D:\Users\chern\Desktop\Учеба\5 курс\Непр матмодели\SIR-Vact\mainWindow\bin\Debug\OxyPlot.Wpf.dll
+D:\Users\chern\Desktop\Учеба\5 курс\Непр матмодели\SIR-Vact\mainWindow\bin\Debug\OxyPlot.Xps.dll
+D:\Users\chern\Desktop\Учеба\5 курс\Непр матмодели\SIR-Vact\mainWindow\bin\Debug\System.Windows.Interactivity.dll
+D:\Users\chern\Desktop\Учеба\5 курс\Непр матмодели\SIR-Vact\mainWindow\bin\Debug\GalaSoft.MvvmLight.dll
+D:\Users\chern\Desktop\Учеба\5 курс\Непр матмодели\SIR-Vact\mainWindow\bin\Debug\GalaSoft.MvvmLight.Platform.pdb
+D:\Users\chern\Desktop\Учеба\5 курс\Непр матмодели\SIR-Vact\mainWindow\bin\Debug\GalaSoft.MvvmLight.Platform.xml
+D:\Users\chern\Desktop\Учеба\5 курс\Непр матмодели\SIR-Vact\mainWindow\bin\Debug\Microsoft.Research.Oslo.pdb
+D:\Users\chern\Desktop\Учеба\5 курс\Непр матмодели\SIR-Vact\mainWindow\bin\Debug\OxyPlot.pdb
+D:\Users\chern\Desktop\Учеба\5 курс\Непр матмодели\SIR-Vact\mainWindow\bin\Debug\OxyPlot.xml
+D:\Users\chern\Desktop\Учеба\5 курс\Непр матмодели\SIR-Vact\mainWindow\bin\Debug\OxyPlot.Wpf.pdb
+D:\Users\chern\Desktop\Учеба\5 курс\Непр матмодели\SIR-Vact\mainWindow\bin\Debug\OxyPlot.Wpf.xml
+D:\Users\chern\Desktop\Учеба\5 курс\Непр матмодели\SIR-Vact\mainWindow\bin\Debug\OxyPlot.Xps.pdb
+D:\Users\chern\Desktop\Учеба\5 курс\Непр матмодели\SIR-Vact\mainWindow\bin\Debug\OxyPlot.Xps.xml
+D:\Users\chern\Desktop\Учеба\5 курс\Непр матмодели\SIR-Vact\mainWindow\bin\Debug\GalaSoft.MvvmLight.pdb
+D:\Users\chern\Desktop\Учеба\5 курс\Непр матмодели\SIR-Vact\mainWindow\bin\Debug\GalaSoft.MvvmLight.xml
+D:\Users\chern\Desktop\Учеба\5 курс\Непр матмодели\SIR-Vact\mainWindow\obj\Debug\MainWindow.baml
+D:\Users\chern\Desktop\Учеба\5 курс\Непр матмодели\SIR-Vact\mainWindow\obj\Debug\mainWindow.g.resources
+D:\Users\chern\Desktop\Учеба\5 курс\Непр матмодели\SIR-Vact\mainWindow\obj\Debug\mainWindow.Properties.Resources.resources
+D:\Users\chern\Desktop\Учеба\5 курс\Непр матмодели\SIR-Vact\mainWindow\obj\Debug\mainWindow.csproj.GenerateResource.Cache
+D:\Users\chern\Desktop\Учеба\5 курс\Непр матмодели\SIR-Vact\mainWindow\obj\Debug\mainWindow.TrustInfo.xml
+D:\Users\chern\Desktop\Учеба\5 курс\Непр матмодели\SIR-Vact\mainWindow\obj\Debug\mainWindow.exe.manifest
+D:\Users\chern\Desktop\Учеба\5 курс\Непр матмодели\SIR-Vact\mainWindow\obj\Debug\mainWindow.application
+D:\Users\chern\Desktop\Учеба\5 курс\Непр матмодели\SIR-Vact\mainWindow\obj\Debug\mainWindow.csprojResolveAssemblyReference.cache

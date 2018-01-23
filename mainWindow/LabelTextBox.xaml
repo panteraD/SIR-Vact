@@ -1,0 +1,15 @@
+﻿<UserControl x:Class="mainWindow.LabelTextBox"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             mc:Ignorable="d" Height="Auto" >
+    <Grid x:Name="Root" HorizontalAlignment="Stretch">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="Auto" SharedSizeGroup="Labels"/>  
+            <ColumnDefinition Width="Auto"/>  
+        </Grid.ColumnDefinitions>
+        <Label Grid.Column="0" Content="{Binding Label}"    />
+        <TextBox Grid.Column="1"  Text="{Binding Text}" Width="70" Margin="5,0,10,0"  IsReadOnly="{Binding ReadOnly}" Background="{Binding TextBoxBackGround}"  Name="BaseTextBox"  PreviewTextInput="Double_PreviewTextInput" DataObject.Pasting="DoubleOnly_Pasting" GotFocus="SelectAllTextOnGotFocus" HorizontalAlignment="Stretch" VerticalAlignment="Center" HorizontalContentAlignment="Left"   />
+    </Grid>
+</UserControl>

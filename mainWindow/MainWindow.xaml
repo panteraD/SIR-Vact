@@ -1,0 +1,97 @@
+﻿<Window x:Class="mainWindow.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:dc="clr-namespace:mainWindow"
+        xmlns:oxy="http://oxyplot.org/wpf"
+        mc:Ignorable="d"
+        WindowStartupLocation="Manual"
+        Left="0"
+        Top="0"
+        Title="SIR Epidemic Model with Vactination" Height="800" Width="1280">
+
+    <Window.DataContext>
+        <dc:ViewModel></dc:ViewModel>
+    </Window.DataContext>
+
+    <Window.Resources>
+        <Style TargetType="Button">
+            <Setter Property="Margin" Value="10,0,10,0"></Setter>
+        </Style>
+    </Window.Resources>
+
+    <Grid x:Name="Main" >
+        <TabControl>
+
+            <TabItem Header="Main">
+                <Grid>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="*" MinWidth="300"  />
+                        <ColumnDefinition Width="*" MinWidth="800" />
+                    </Grid.ColumnDefinitions>
+
+
+                    <Border Name="BorderOne" Grid.Column="0"  BorderThickness="3" BorderBrush="BlanchedAlmond">
+                        <Grid>
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition Width="230"></ColumnDefinition>
+                                <ColumnDefinition></ColumnDefinition>
+                            </Grid.ColumnDefinitions>
+                            <dc:Container FlowDirection="LeftToRight" Grid.Column="0">
+
+                                <dc:LabelTextBox Label="Suseptible Fraction" Text="{Binding Data.SuseptipleFaction, StringFormat={}0.####}" ManipulationCompleted="UIElement_OnManipulationCompleted" Width="Auto"/>
+                                <dc:LabelTextBox Label="Infected Fraction" Text="{Binding Data.InfectedFaction, StringFormat={}0.####}"    ManipulationCompleted="UIElement_OnManipulationCompleted" Width="Auto"/>
+                                <dc:LabelTextBox Label="Beta(Contact Rate)" Text="{Binding Data.Beta, StringFormat={}0.####}"  ManipulationCompleted="UIElement_OnManipulationCompleted"  Width="Auto" />
+                                <dc:LabelTextBox Label="Mu (Birth/Death Rate)" Text="{Binding Data.Mu, StringFormat={}0.#######}"   Width="Auto" />
+                                <dc:LabelTextBox Label="Gamma (Recovery Rate)" Text="{Binding Data.Gamma, StringFormat={}0.####}"   Width="Auto"/>
+                                <dc:LabelTextBox Label="R_0 (Basic Recovery Rate)" Text="{Binding Data.R0, StringFormat={}0.####}" ReadOnly="True" TextBoxBackGround="BlanchedAlmond"  Width="Auto"/>
+                                <!--dc:LabelTextBox Label="F" Text="{Binding Data.F, StringFormat={}0.####}"  ReadOnly="True" TextBoxBackGround="BlanchedAlmond" Width="Auto"/-->
+                                <dc:LabelTextBox Label="P(Vaccination Coverage)" Text="{Binding Data.P, StringFormat={}0.####}"   Width="Auto"/>
+                                <dc:LabelTextBox Label="Time Step"  Text="{Binding Data.Step, StringFormat={}0.####}"   Width="Auto"/>
+                                <dc:LabelTextBox Label="Time limit" Text="{Binding Data.TimeLimit, StringFormat={}0.####}"   Width="Auto"/>
+                            </dc:Container>
+                            <dc:Container Grid.Column="1">
+                                <Slider Height="44" Minimum="0" Maximum="1" Value="{Binding Data.SuseptipleFaction}" ValueChanged="RangeBase_OnValueChanged" VerticalAlignment="Center" RenderTransformOrigin="0.499,0.716"></Slider>
+                                <Label Height="9"></Label>
+                                <Slider Minimum="0" Maximum="1" Value="{Binding Data.Beta}" ValueChanged="RangeBase_OnValueChanged" Height="30" />
+                                <Slider Minimum="0.001" Maximum="0.6" Value="{Binding Data.Mu}" ValueChanged="RangeBase_OnValueChanged" Height="26" />
+                                <Slider Minimum="0" Maximum="1" Value="{Binding Data.Gamma}" ValueChanged="RangeBase_OnValueChanged" Height="24" />
+                                <Label Height="28"></Label>
+                                <Slider Minimum="0" Maximum="1" Value="{Binding Data.P}" ValueChanged="RangeBase_OnValueChanged" Height="26" />
+                                <Slider Minimum="0.01" Maximum="1"  Value="{Binding Data.Step}" ValueChanged="RangeBase_OnValueChanged" Height="27"  />
+                                <Slider Minimum="1" Maximum="500" Value="{Binding Data.TimeLimit}" ValueChanged="RangeBase_OnValueChanged" Height="33" />
+                            </dc:Container>
+                        </Grid>
+
+                    </Border>
+
+                    <Border Grid.Column="1"   BorderThickness="3" BorderBrush="BlanchedAlmond">
+                        <oxy:PlotView x:Name="Plot1" Controller="{Binding CustomPlotController}" Model="{Binding PlotModel}"/>
+                    </Border>
+                </Grid>
+            </TabItem>
+
+
+
+
+
+
+
+            
+            <TabItem Header="Theory">
+                <DocumentViewer x:Name="TheoryDocumentViewer">
+
+                </DocumentViewer>
+            </TabItem>
+
+        </TabControl>
+
+
+
+
+    </Grid>
+
+
+
+</Window>
