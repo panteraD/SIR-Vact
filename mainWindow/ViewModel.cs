@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.ComponentModel;
-
+using System.Linq;
 using System.Windows;
 using System.Windows.Controls;
 using System.Windows.Input;
@@ -51,11 +51,11 @@ namespace mainWindow
         }
 
 
-        //     public PlotController CustomPlotController
-        //    {
-        //       get { return _customPlotController; }
-        //      set { _customPlotController = value; OnPropertyChanged("CustomPlotController"); }
-        // }
+            public PlotController CustomPlotController
+            {
+               get { return _customPlotController; }
+              set { _customPlotController = value; OnPropertyChanged("CustomPlotController"); }
+         }
 
         #endregion
 
@@ -67,9 +67,9 @@ namespace mainWindow
             _data = new ModelData();
             InitData(_data);
             //Show point legend when hovering
-            //_customPlotController = new PlotController();
-            //_customPlotController.UnbindMouseDown(OxyMouseButton.Left);
-          //  _customPlotController.BindMouseEnter(PlotCommands.HoverSnapTrack);
+            _customPlotController = new PlotController();
+            _customPlotController.UnbindMouseDown(OxyMouseButton.Left);
+            _customPlotController.BindMouseEnter(PlotCommands.HoverSnapTrack);
             _plotModel = new PlotModel();
             ShowPMass();
         }
@@ -89,12 +89,43 @@ namespace mainWindow
             _data.TimeLimit = 5;
         }
 
+        public void CalcExample1()
+        {
+            //R = 0.07 Infection is being wiped out(approaches 0)
+            _data.SuseptipleFaction = 0.5;
+            _data.InfectedFaction = 0.5;
+            _data.Beta = 0.01;
+            _data.Mu = (double)1 / (70 * 365);
+            _data.Gamma = (double)1 / 7;
+            _data.P = 0.7;
+            _data.Step = 0.01;
+            _data.TimeLimit = 5;
+        }
+
+        public void CalcExample2()
+        {
+            //R_0 = 7, Suseptible dying off
+            _data.SuseptipleFaction = 0.999;
+            _data.InfectedFaction = 0.001;
+            _data.Beta = 1;
+            _data.Mu = (double)1 / (70 * 365);
+            _data.Gamma = (double)1 / 7;
+            _data.P = 0.7;
+            _data.Step = 0.01;
+            _data.TimeLimit = 5;
+        }
+
 
 
 
         public void ShowPMass()
         {
-            UpdatePlot("Time", "Population fraction", "Time", "Population fraction");
+            var timeTitle = Application.Current.TryFindResource("Time") as string;
+            var PopulationFractionTitle = Application.Current.FindResource("PopulationFraction") as string;
+
+            string localizedMessage = (string) Application.Current.FindResource("Time");
+
+            UpdatePlot(timeTitle, PopulationFractionTitle, timeTitle, PopulationFractionTitle);
         }
 
 
@@ -218,8 +249,13 @@ namespace mainWindow
         #region click handlers
 
         private ICommand _calc;
+        private ICommand _example1;
+        private ICommand _example2;
+
 
         public ICommand Calc => _calc ?? (_calc = new RelayCommand(ShowPMass));
+        public ICommand Example1 => _example1 ?? (_example1 = new RelayCommand(CalcExample1));
+        public ICommand Example2 => _example2 ?? (_example2 = new RelayCommand(CalcExample2));
 
 
         #endregion

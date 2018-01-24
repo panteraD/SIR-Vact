@@ -1,0 +1,29 @@
+﻿<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+                    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+                    xmlns:system="clr-namespace:System;assembly=mscorlib">
+    <system:String x:Key="Title">Модель эпидемми SIR с вакцинацией</system:String>
+    <system:String x:Key="ModelTab">Модель</system:String>
+    <system:String x:Key="TheoryTab">Теория</system:String>
+    <system:String x:Key="ModelParamerts">Параметры модели</system:String>
+    <system:String x:Key="SuseptibleFraction">Пропорция воспиимчивых особей</system:String>
+    <system:String x:Key="InfectedFraction">Пропорция зараженных особей</system:String>
+    <system:String x:Key="Beta">β(Частота контактов)</system:String>
+    <system:String x:Key="Mu">μ(Частота смертности)</system:String>
+    <system:String x:Key="Gamma">γ(Скорость выздоравливания)</system:String>
+    <system:String x:Key="R0">R_0(Базовая скорость выздоравливания)</system:String>
+    <system:String x:Key="P">P(Охват вакцинации)</system:String>
+    <system:String x:Key="TimeStep">Интервал времени</system:String>
+    <system:String x:Key="TimeLimit">Время наблюдения</system:String>
+    <system:String x:Key="ChangeLang">Изменить язык</system:String>
+    <system:String x:Key="Example1Title">Пример: Инфекция уничтожается</system:String>
+    <system:String x:Key="Example2Title">Пример: Вспышка инфекции</system:String>
+
+    <system:String x:Key="Suseptible">Восприимчивые</system:String>
+    <system:String x:Key="Infected">Зараженные</system:String>
+    <system:String x:Key="Released">Излечившиеся</system:String>
+    <system:String x:Key="Time">Время</system:String>
+    <system:String x:Key="PopulationFraction">Популяция</system:String>
+
+    <system:String x:Key="m_menu_Language">Язык</system:String>
+
+</ResourceDictionary>

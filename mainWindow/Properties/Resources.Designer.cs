@@ -61,6 +61,38 @@ namespace mainWindow.Properties {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to &lt;ResourceDictionary xmlns=&quot;http://schemas.microsoft.com/winfx/2006/xaml/presentation&quot;
+        ///                    xmlns:x=&quot;http://schemas.microsoft.com/winfx/2006/xaml&quot;
+        ///
+        ///                    xmlns:system=&quot;clr-namespace:System;assembly=mscorlib&quot;&gt;
+        ///    &lt;system:String x:Key=&quot;Title&quot;&gt;SIR Epidemic Model with vaccination&lt;/system:String&gt;
+        ///    &lt;system:String x:Key=&quot;ModelTab&quot;&gt;Model&lt;/system:String&gt;
+        ///    &lt;system:String x:Key=&quot;TheoryTab&quot;&gt;Theory&lt;/system:String&gt;
+        ///
+        ///    &lt;system:String x:Key=&quot;ModelParamerts&quot;&gt;Model Parameters&lt;/sys [rest of string was truncated]&quot;;.
+        /// </summary>
+        internal static string StringResourcesENG {
+            get {
+                return ResourceManager.GetString("StringResourcesENG", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to &lt;ResourceDictionary xmlns=&quot;http://schemas.microsoft.com/winfx/2006/xaml/presentation&quot;
+        ///                    xmlns:x=&quot;http://schemas.microsoft.com/winfx/2006/xaml&quot;
+        ///                    xmlns:system=&quot;clr-namespace:System;assembly=mscorlib&quot;&gt;
+        ///    &lt;system:String x:Key=&quot;Title&quot;&gt;Модель эпидемми SIR с вакцинацией&lt;/system:String&gt;
+        ///    &lt;system:String x:Key=&quot;ModelTab&quot;&gt;Модель&lt;/system:String&gt;
+        ///    &lt;system:String x:Key=&quot;TheoryTab&quot;&gt;Теория&lt;/system:String&gt;
+        ///    &lt;system:String x:Key=&quot;ModelParamerts&quot;&gt;Параметры модели&lt;/system:S [rest of string was truncated]&quot;;.
+        /// </summary>
+        internal static string StringResourcesRUS {
+            get {
+                return ResourceManager.GetString("StringResourcesRUS", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Icon similar to (Icon).
         /// </summary>
         internal static System.Drawing.Icon Virus {

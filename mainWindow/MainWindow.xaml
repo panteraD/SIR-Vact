@@ -9,7 +9,7 @@
         WindowStartupLocation="Manual"
         Left="0"
         Top="0"
-        Title="SIR Epidemic Model with Vactination" Height="800" Width="1280">
+        Title="{DynamicResource Title}" Height="800" Width="1400">
 
     <Window.DataContext>
         <dc:ViewModel></dc:ViewModel>
@@ -21,10 +21,12 @@
         </Style>
     </Window.Resources>
 
+
     <Grid x:Name="Main" >
+
         <TabControl>
 
-            <TabItem Header="Main">
+            <TabItem Header="{DynamicResource ModelTab}">
                 <Grid>
                     <Grid.ColumnDefinitions>
                         <ColumnDefinition Width="*" MinWidth="300"  />
@@ -35,32 +37,42 @@
                     <Border Name="BorderOne" Grid.Column="0"  BorderThickness="3" BorderBrush="BlanchedAlmond">
                         <Grid>
                             <Grid.ColumnDefinitions>
-                                <ColumnDefinition Width="230"></ColumnDefinition>
+                                <ColumnDefinition Width="320"></ColumnDefinition>
                                 <ColumnDefinition></ColumnDefinition>
                             </Grid.ColumnDefinitions>
                             <dc:Container FlowDirection="LeftToRight" Grid.Column="0">
-
-                                <dc:LabelTextBox Label="Suseptible Fraction" Text="{Binding Data.SuseptipleFaction, StringFormat={}0.####}" ManipulationCompleted="UIElement_OnManipulationCompleted" Width="Auto"/>
-                                <dc:LabelTextBox Label="Infected Fraction" Text="{Binding Data.InfectedFaction, StringFormat={}0.####}"    ManipulationCompleted="UIElement_OnManipulationCompleted" Width="Auto"/>
-                                <dc:LabelTextBox Label="Beta(Contact Rate)" Text="{Binding Data.Beta, StringFormat={}0.####}"  ManipulationCompleted="UIElement_OnManipulationCompleted"  Width="Auto" />
-                                <dc:LabelTextBox Label="Mu (Birth/Death Rate)" Text="{Binding Data.Mu, StringFormat={}0.#######}"   Width="Auto" />
-                                <dc:LabelTextBox Label="Gamma (Recovery Rate)" Text="{Binding Data.Gamma, StringFormat={}0.####}"   Width="Auto"/>
-                                <dc:LabelTextBox Label="R_0 (Basic Recovery Rate)" Text="{Binding Data.R0, StringFormat={}0.####}" ReadOnly="True" TextBoxBackGround="BlanchedAlmond"  Width="Auto"/>
+                                <Label Content="{DynamicResource ModelParamerts}"></Label>
+                                <dc:LabelTextBox Label="{DynamicResource SuseptibleFraction}" Text="{Binding Data.SuseptipleFaction, StringFormat={}0.####}" ManipulationCompleted="UIElement_OnManipulationCompleted" Width="Auto"/>
+                                <dc:LabelTextBox Label="{DynamicResource InfectedFraction}" Text="{Binding Data.InfectedFaction, StringFormat={}0.####}"    ManipulationCompleted="UIElement_OnManipulationCompleted" Width="Auto"/>
+                                <dc:LabelTextBox Label="{DynamicResource Beta}" Text="{Binding Data.Beta, StringFormat={}0.####}"  ManipulationCompleted="UIElement_OnManipulationCompleted"  Width="Auto" />
+                                <dc:LabelTextBox Label="{DynamicResource Mu}" Text="{Binding Data.Mu, StringFormat={}0.#######}"   Width="Auto" />
+                                <dc:LabelTextBox Label="{DynamicResource Gamma}" Text="{Binding Data.Gamma, StringFormat={}0.####}"   Width="Auto"/>
+                                <dc:LabelTextBox Label="{DynamicResource R0}" Text="{Binding Data.R0, StringFormat={}0.####}" ReadOnly="True" TextBoxBackGround="BlanchedAlmond"  Width="Auto"/>
                                 <!--dc:LabelTextBox Label="F" Text="{Binding Data.F, StringFormat={}0.####}"  ReadOnly="True" TextBoxBackGround="BlanchedAlmond" Width="Auto"/-->
-                                <dc:LabelTextBox Label="P(Vaccination Coverage)" Text="{Binding Data.P, StringFormat={}0.####}"   Width="Auto"/>
-                                <dc:LabelTextBox Label="Time Step"  Text="{Binding Data.Step, StringFormat={}0.####}"   Width="Auto"/>
-                                <dc:LabelTextBox Label="Time limit" Text="{Binding Data.TimeLimit, StringFormat={}0.####}"   Width="Auto"/>
+                                <dc:LabelTextBox Label="{DynamicResource P}" Text="{Binding Data.P, StringFormat={}0.####}"   Width="Auto"/>
+                                <dc:LabelTextBox Label="{DynamicResource TimeStep}"  Text="{Binding Data.Step, StringFormat={}0.####}"   Width="Auto"/>
+                                <dc:LabelTextBox Label="{DynamicResource TimeLimit}" Text="{Binding Data.TimeLimit, StringFormat={}0.####}"   Width="Auto"/>
+                                <Label></Label>
+                                <Button Click="ChangeLanguage_OnClick" Content="{DynamicResource ChangeLang}" Width="200"></Button>
+                                <Label></Label>
+                                <Button Command="{Binding Example1}" Content="{DynamicResource Example1Title}" Width="200"></Button>
+                                <Label></Label>
+                                <Button Command="{Binding Example2}" Content="{DynamicResource Example2Title}" Width="200"></Button>
+                                <!--<Menu DockPanel.Dock="Top" Background="{x:Null}">
+                                    <MenuItem x:Name="menuLanguage" Header="{DynamicResource m_menu_Language}" />
+                                </Menu>-->
                             </dc:Container>
                             <dc:Container Grid.Column="1">
-                                <Slider Height="44" Minimum="0" Maximum="1" Value="{Binding Data.SuseptipleFaction}" ValueChanged="RangeBase_OnValueChanged" VerticalAlignment="Center" RenderTransformOrigin="0.499,0.716"></Slider>
+                                <Label Height="26"></Label>
+                                <Slider Height="44" Minimum="0" Maximum="1" Value="{Binding Data.SuseptipleFaction}" ValueChanged="RangeBase_OnValueChanged" VerticalAlignment="Center" RenderTransformOrigin="0.499,0.716" Margin="10,0"></Slider>
                                 <Label Height="9"></Label>
-                                <Slider Minimum="0" Maximum="1" Value="{Binding Data.Beta}" ValueChanged="RangeBase_OnValueChanged" Height="30" />
-                                <Slider Minimum="0.001" Maximum="0.6" Value="{Binding Data.Mu}" ValueChanged="RangeBase_OnValueChanged" Height="26" />
-                                <Slider Minimum="0" Maximum="1" Value="{Binding Data.Gamma}" ValueChanged="RangeBase_OnValueChanged" Height="24" />
+                                <Slider Minimum="0" Maximum="1" Value="{Binding Data.Beta}" ValueChanged="RangeBase_OnValueChanged" Height="30" Margin="10,0" />
+                                <Slider Minimum="0.001" Maximum="0.6" Value="{Binding Data.Mu}" ValueChanged="RangeBase_OnValueChanged" Height="26" Margin="10,0" />
+                                <Slider Minimum="0" Maximum="1" Value="{Binding Data.Gamma}" ValueChanged="RangeBase_OnValueChanged" Height="24" Margin="10,0" />
                                 <Label Height="28"></Label>
-                                <Slider Minimum="0" Maximum="1" Value="{Binding Data.P}" ValueChanged="RangeBase_OnValueChanged" Height="26" />
-                                <Slider Minimum="0.01" Maximum="1"  Value="{Binding Data.Step}" ValueChanged="RangeBase_OnValueChanged" Height="27"  />
-                                <Slider Minimum="1" Maximum="500" Value="{Binding Data.TimeLimit}" ValueChanged="RangeBase_OnValueChanged" Height="33" />
+                                <Slider Minimum="0" Maximum="1" Value="{Binding Data.P}" ValueChanged="RangeBase_OnValueChanged" Height="26" Margin="0,0,10,0" />
+                                <Slider Minimum="0.01" Maximum="1"  Value="{Binding Data.Step}" ValueChanged="RangeBase_OnValueChanged" Height="27" Margin="10,0"  />
+                                <Slider Minimum="1" Maximum="500" Value="{Binding Data.TimeLimit}" ValueChanged="RangeBase_OnValueChanged" Height="33" Margin="10,0" />
                             </dc:Container>
                         </Grid>
 
@@ -72,14 +84,7 @@
                 </Grid>
             </TabItem>
 
-
-
-
-
-
-
-            
-            <TabItem Header="Theory">
+            <TabItem Header="{DynamicResource TheoryTab}">
                 <DocumentViewer x:Name="TheoryDocumentViewer">
 
                 </DocumentViewer>

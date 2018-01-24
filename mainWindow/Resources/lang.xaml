@@ -1,0 +1,39 @@
+﻿<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+                    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+
+                    xmlns:system="clr-namespace:System;assembly=mscorlib">
+    <system:String x:Key="Title">SIR Epidemic Model with vaccination</system:String>
+    <system:String x:Key="ModelTab">Model</system:String>
+    <system:String x:Key="TheoryTab">Theory</system:String>
+
+    <system:String x:Key="ModelParamerts">Model Parameters</system:String>
+    <system:String x:Key="SuseptibleFraction">Suseptible Fraction</system:String>
+    <system:String x:Key="InfectedFraction">Infected Fraction</system:String>
+    <system:String x:Key="Beta">β(Contact Rate)</system:String>
+    <system:String x:Key="Mu">μ(Death Rate)</system:String>
+    <system:String x:Key="Gamma">γ(Recovery Rate)</system:String>
+    <system:String x:Key="R0">R_0(Basic Recovery Rate)</system:String>
+    <system:String x:Key="P">P(Vaccination Coverage)</system:String>
+    <system:String x:Key="TimeStep">Time Step</system:String>
+    <system:String x:Key="TimeLimit">Time Limit</system:String>
+    <system:String x:Key="ChangeLang">Change Language</system:String>
+    <system:String x:Key="Example1Title">Example: Infection being removed</system:String>
+    <system:String x:Key="Example2Title">Example: Infection outbreak</system:String>
+
+
+    <system:String x:Key="Suseptible">Suseptible</system:String>
+    <system:String x:Key="Infected">Infected</system:String>
+    <system:String x:Key="Released">Released</system:String>
+    <system:String x:Key="Time">Time</system:String>
+    <system:String x:Key="PopulationFraction">Population Fraction</system:String>
+
+
+
+    <system:String x:Key="m_menu_Language">Language</system:String>
+
+
+
+
+
+
+</ResourceDictionary>
