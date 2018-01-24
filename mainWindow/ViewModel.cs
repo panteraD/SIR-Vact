@@ -28,18 +28,10 @@ namespace mainWindow
             }
         }
 
-        #endregion
-        private ModelData _data;
-        private PlotModel _plotModel;
-        private PlotController _customPlotController;
-
-        #region binding properties
-
-
         public ModelData Data
         {
             get { return _data; }
-            set { _data = value;  OnPropertyChanged("Data"); }
+            set { _data = value; OnPropertyChanged("Data"); }
         }
 
 
@@ -51,15 +43,26 @@ namespace mainWindow
         }
 
 
-            public PlotController CustomPlotController
-            {
-               get { return _customPlotController; }
-              set { _customPlotController = value; OnPropertyChanged("CustomPlotController"); }
-         }
+        public PlotController CustomPlotController
+        {
+            get { return _customPlotController; }
+            set { _customPlotController = value; OnPropertyChanged("CustomPlotController"); }
+        }
+
 
         #endregion
+        private ModelData _data;
+        private PlotModel _plotModel;
+        private PlotController _customPlotController;
 
 
+        private Window refToMain;
+
+        public Window RefToMain
+        {
+            get { return refToMain; }
+            set { refToMain = value; }
+        }
 
 
         public ViewModel()
@@ -71,7 +74,7 @@ namespace mainWindow
             _customPlotController.UnbindMouseDown(OxyMouseButton.Left);
             _customPlotController.BindMouseEnter(PlotCommands.HoverSnapTrack);
             _plotModel = new PlotModel();
-            ShowPMass();
+           // ShowPMass();
         }
 
        
@@ -116,31 +119,39 @@ namespace mainWindow
         }
 
 
+        #region Plottting methods
 
-
-        public void ShowPMass()
+        public void ShowPMass(string SuseptibleTitle, string InfectedTitle, string  RecoverdTitle, string timeTitle, string PopulationFractionTitle)
         {
-            var timeTitle = Application.Current.TryFindResource("Time") as string;
-            var PopulationFractionTitle = Application.Current.FindResource("PopulationFraction") as string;
+            //string timeTitle = (string)refToMain.TryFindResource("Time");
+            //string PopulationFractionTitle = (string)refToMain.TryFindResource("PopulationFraction");
+            //string SuseptibleTitle = (string)refToMain.TryFindResource("Suseptible");
+            //string InfectedTitle = (string)refToMain.TryFindResource("Infected");
+            //string RecoverdTitle = (string)refToMain.TryFindResource("Released");
 
-            string localizedMessage = (string) Application.Current.FindResource("Time");
+            //string timeTitle = (string)Application.Current.FindResource("Time"); //this shit dont work
+            //string PopulationFractionTitle = (string)refToMain.TryFindResource("PopulationFraction");
+            //string SuseptibleTitle = (string)refToMain.TryFindResource("Suseptible");
+            //string InfectedTitle = (string)refToMain.TryFindResource("Infected");
+            //string RecoverdTitle = (string)refToMain.TryFindResource("Released");
 
-            UpdatePlot(timeTitle, PopulationFractionTitle, timeTitle, PopulationFractionTitle);
+
+            UpdatePlot(SuseptibleTitle, InfectedTitle, RecoverdTitle, timeTitle, PopulationFractionTitle);
         }
 
 
-        #region Plottting methods
 
 
-        public void UpdatePlot(String xProp, String yProp, String xAxisTitle, String yAxisTitle)
+
+        public void UpdatePlot(String S, String I, String R, String xAxisTitle, String yAxisTitle)
         {
 
-            LoadData(xProp, yProp);
+            LoadData(S, I, R);
             SetUpAxes(xAxisTitle, yAxisTitle);
         }
 
 
-        public void LoadData(String param1, String param2)
+        public void LoadData(String param1, String param2, String param3)
         {
             if (PlotModel != null)
             {
@@ -156,7 +167,7 @@ namespace mainWindow
                 MarkerSize = 6,
                 //default if false
                 CanTrackerInterpolatePoints = true,
-                Title = "Suseptible",
+                Title = param1,
             };
 
             var lineSerie2 = new LineSeries
@@ -165,7 +176,7 @@ namespace mainWindow
                 MarkerSize = 6,
                 //default if false
                 CanTrackerInterpolatePoints = true,
-                Title = "Infected",
+                Title = param2,
                 //default if false
                 Color = OxyColors.Red
             };
@@ -176,7 +187,7 @@ namespace mainWindow
                 MarkerSize = 6,
                 //default if false
                 CanTrackerInterpolatePoints = true,
-                Title = "Infected",
+                Title = param3,
                 //default if false
                 Color = OxyColors.Blue
             };
@@ -184,7 +195,6 @@ namespace mainWindow
 
             List<DataPoint> suseptipleDataPoints = new List<DataPoint>();
             List<DataPoint> infectedDataPoints = new List<DataPoint>();
-
             List<DataPoint> recoveredDataPoints = new List<DataPoint>();
 
 
@@ -253,7 +263,7 @@ namespace mainWindow
         private ICommand _example2;
 
 
-        public ICommand Calc => _calc ?? (_calc = new RelayCommand(ShowPMass));
+        //public ICommand Calc => _calc ?? (_calc = new RelayCommand(ShowPMass));
         public ICommand Example1 => _example1 ?? (_example1 = new RelayCommand(CalcExample1));
         public ICommand Example2 => _example2 ?? (_example2 = new RelayCommand(CalcExample2));
 

@@ -35,12 +35,14 @@ namespace mainWindow
                 new XpsDocument(System.IO.Path.Combine(Environment.CurrentDirectory, theoryDocName), FileAccess.Read);
             TheoryDocumentViewer.Document = theoryXpsDocument.GetFixedDocumentSequence();
 
-            //old
+
             this.SetLanguageDictionary();
-
-
-
+            redrawPlot();
         }
+
+       
+
+
 
 
         private void CompositionTargetRendering(object sender, EventArgs e)
@@ -49,21 +51,27 @@ namespace mainWindow
         }
 
 
-        private void RangeBase_OnValueChanged(object sender, RoutedPropertyChangedEventArgs<double> e)
+        private void redrawPlot()
         {
             if (viewModel != null)
             {
-                viewModel.ShowPMass();
+                string timeTitle = (string)this.TryFindResource("Time");
+                string PopulationFractionTitle = (string)this.TryFindResource("PopulationFraction");
+                string SuseptibleTitle = (string)this.TryFindResource("Suseptible");
+                string InfectedTitle = (string)this.TryFindResource("Infected");
+                string RecoverdTitle = (string)this.TryFindResource("Released");
+                viewModel.ShowPMass(SuseptibleTitle, InfectedTitle, RecoverdTitle, timeTitle, PopulationFractionTitle);
             }
+        }
+
+        private void RangeBase_OnValueChanged(object sender, RoutedPropertyChangedEventArgs<double> e)
+        {
+            redrawPlot();
         }
 
         private void UIElement_OnManipulationCompleted(object sender, ManipulationCompletedEventArgs e)
         {
-            if (viewModel != null)
-            {
-                viewModel.ShowPMass();
-                MessageBox.Show((string)FindResource("Time"));
-            }
+            redrawPlot();
         }
 
         private void SetLanguageDictionary()
@@ -114,7 +122,7 @@ namespace mainWindow
 
             this.Resources.MergedDictionaries.Clear();
             this.Resources.MergedDictionaries.Add(dict);
-
+            redrawPlot();
         }
 
 
