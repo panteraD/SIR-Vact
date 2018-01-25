@@ -170,7 +170,7 @@ namespace mainWindow
 
         #endregion
 
-        private string getLocalizedHelpMessage(String key)
+        public string getLocalizedHelpMessage(String key)
         {
             CultureInfo currectCulture = Thread.CurrentThread.CurrentCulture;
             if (currectCulture.ToString().Equals(mainWindow.MainWindow.ENGLISH))

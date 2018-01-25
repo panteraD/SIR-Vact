@@ -103,6 +103,7 @@ namespace mainWindow
             _data.P = 0.7;
             _data.Step = 0.01;
             _data.TimeLimit = 5;
+            _data.HelpText = _data.getLocalizedHelpMessage("EquilibriumExample");
         }
 
         public void CalcExample2()
@@ -116,11 +117,17 @@ namespace mainWindow
             _data.P = 0.7;
             _data.Step = 0.01;
             _data.TimeLimit = 5;
+            _data.HelpText = _data.getLocalizedHelpMessage("EpidemicExample");
         }
 
         public void RemoveHelpText()
         {
             _data.HelpText = "";
+        }
+
+        public void SetHelpText(String text)
+        {
+            _data.HelpText = text;
         }
 
 

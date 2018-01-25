@@ -19,6 +19,7 @@
     <system:String x:Key="ChangeLang">Change Language</system:String>
     <system:String x:Key="Example1Title">Example: Infection being removed</system:String>
     <system:String x:Key="Example2Title">Example: Infection outbreak</system:String>
+    <system:String x:Key="EventLabel">Events</system:String>
 
 
     <system:String x:Key="Suseptible">Suseptible</system:String>
@@ -29,30 +30,34 @@
 
 
     <!--beta - transmission rate-->
-    <system:String x:Key="EventBetaInc">Beta inc</system:String>
-    <system:String x:Key="EventBetaDec">Beta dec</system:String>
+    <system:String x:Key="EventBetaInc">β parameter has been increased. It determents transmission rate of infection spread from Infected to Suseptible individuals</system:String>
+    <system:String x:Key="EventBetaDec">β parameter has been decreased. It determents rate of infection spread from Infected to Suseptible individuals</system:String>
     <!--gamma recovery rate-->
-    <system:String x:Key="EventGammaInc">Gamma Inc</system:String>
-    <system:String x:Key="EventGammaDec">gamma dec</system:String>
+    <system:String x:Key="EventGammaInc">γ parameter has been increased. It determents recovery rate of Infected individuals</system:String>
+    <system:String x:Key="EventGammaDec">γ parameter has been decreased. It determents recovery rate of Infected individuals</system:String>
     <!--Mu death rate-->
-    <system:String x:Key="EventMuInc">mu inc</system:String>
-    <system:String x:Key="EventMuDec">mu dec</system:String>
+    <system:String x:Key="EventMuInc">γ parameter has been increased. It determents rate of natural death</system:String>
+    <system:String x:Key="EventMuDec">γ parameter has been decreased. It determents rate of natural death</system:String>
     <!--P vacc covergage-->
-    <system:String x:Key="EventPInc">p inc</system:String>
-    <system:String x:Key="EventPDec">p dec</system:String>
+    <system:String x:Key="EventPInc">p parameter has been increased. It's vaccination coverage, proportion of population which is immunized</system:String>
+    <system:String x:Key="EventPDec">p parameter has been decreased. It's Vaccination coverage, proportion of population which is immunized</system:String>
     <!--infected faction-->
     <system:String x:Key="EventIInc">I inc</system:String>
     <system:String x:Key="EventIDec">I dec</system:String>
     <!--Suseptiple faction-->
-    <system:String x:Key="EventSInc">S inc</system:String>
-    <system:String x:Key="EventSDec">S dec</system:String>
+    <system:String x:Key="EventSInc">Initial Susptible fraction has been increased</system:String>
+    <system:String x:Key="EventSDec">Initial Susptible fraction has been decreased</system:String>
     <!--time step-->
-    <system:String x:Key="EventTimeStepInc">timeS inc</system:String>
-    <system:String x:Key="EventTimeStepDec">timeS dec</system:String>
+    <system:String x:Key="EventTimeStepInc">Time interval has been increased. </system:String>
+    <system:String x:Key="EventTimeStepDec">Time interval has been increased. This will lead to incrased accuracy of solution</system:String>
     <!--time limit-->
-    <system:String x:Key="EventTimeLimitInc">time INC</system:String>
-    <system:String x:Key="EventTimeLimitDec">time DEC</system:String>
-    
+    <system:String x:Key="EventTimeLimitInc">Time of observation increased</system:String>
+    <system:String x:Key="EventTimeLimitDec">Time of observation decreased</system:String>
+
+
+    <system:String x:Key="EpidemicExample">Example of Epidemic outbreak has been selected. Fraction of Suseptible individuals is being reduced drasticly</system:String>
+    <system:String x:Key="EquilibriumExample">Example of Equilibrium has been selected. Fraction of Infected indiviuals is declining to zero, while suseptible fraction remains almost the same</system:String>
+
 
 
 

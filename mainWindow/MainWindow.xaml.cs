@@ -38,6 +38,7 @@ namespace mainWindow
 
             this.SetLanguageDictionary();
             redrawPlot();
+            viewModel.RemoveHelpText();
         }
 
        

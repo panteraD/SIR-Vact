@@ -17,6 +17,7 @@
     <system:String x:Key="ChangeLang">Изменить язык</system:String>
     <system:String x:Key="Example1Title">Пример: Инфекция уничтожается</system:String>
     <system:String x:Key="Example2Title">Пример: Вспышка инфекции</system:String>
+    <system:String x:Key="EventLabel">События</system:String>
 
     <system:String x:Key="Suseptible">Восприимчивые</system:String>
     <system:String x:Key="Infected">Зараженные</system:String>
@@ -26,28 +27,34 @@
 
     
     <!--beta - transmission rate-->
-    <system:String x:Key="EventBetaInc">Beta inc Rus</system:String>
-    <system:String x:Key="EventBetaDec">Beta dec Rus</system:String>
+    <system:String x:Key="EventBetaInc">Увеличен коэфиицент β, определяющий скорость распространения болезни между восприимчивыми и зараженными субъектами</system:String>
+    <system:String x:Key="EventBetaDec">Уменьшен коэфиицент β, определяющий скорость распространения болезни между восприимчивыми и зараженными субъектами</system:String>
     <!--gamma recovery rate-->
-    <system:String x:Key="EventGammaInc">Gamma Inc Rus</system:String>
-    <system:String x:Key="EventGammaDec">gamma dec Rus</system:String>
+    <system:String x:Key="EventGammaInc">Увеличен коэфиицент γ, определяющий скорость выздоравливания субъектов (перехода от зараженного состояния (I) к восстановленому (R))</system:String>
+    <system:String x:Key="EventGammaDec">Уменьшен коэфиицент γ, определяющий скорость выздоравливания субъектов (перехода от зараженного состояния (I) к восстановленому (R))</system:String>
     <!--Mu death rate-->
-    <system:String x:Key="EventMuInc">mu inc Rus</system:String>
-    <system:String x:Key="EventMuDec">mu dec Rus</system:String>
+    <system:String x:Key="EventMuInc">Увеличен коэфиицент μ, определяющий частоту смертности (по естественным причинам)</system:String>
+    <system:String x:Key="EventMuDec">Уменьшен коэфиицент μ, определяющий частоту смертности (по естественным причинам)</system:String>
     <!--P vacc covergage-->
-    <system:String x:Key="EventPInc">p inc Rus</system:String>
-    <system:String x:Key="EventPDec">p dec Rus</system:String>
+    <system:String x:Key="EventPInc">Увеличен коэфиицент p (0 &lt; p &lt; 1), определяющий охват вакцинации для новорожденных субъектов</system:String>
+    <system:String x:Key="EventPDec">Уменьшен коэфиицент p (0 &lt; p &lt; 1), определяющий охват вакцинации для новорожденных субъектов</system:String>
     <!--infected faction-->
     <system:String x:Key="EventIInc">I inc Rus</system:String>
     <system:String x:Key="EventIDec">I dec Rus</system:String>
     <!--Suseptiple faction-->
-    <system:String x:Key="EventSInc">S inc Rus</system:String>
-    <system:String x:Key="EventSDec">S dec Rus</system:String>
+    <system:String x:Key="EventSInc">Увеличено начальное соотношение восприимчивых субъектов к зараженным</system:String>
+    <system:String x:Key="EventSDec">Уменьшено начальное соотношение восприимчивых субъектов к зараженным</system:String>
     <!--time step-->
-    <system:String x:Key="EventTimeStepInc">timeS inc Rus</system:String>
-    <system:String x:Key="EventTimeStepDec">timeS dec Rus</system:String>
+    <system:String x:Key="EventTimeStepInc">Увеличен временной интервал, слишком большое занчение может привести к потере точности</system:String>
+    <system:String x:Key="EventTimeStepDec">Уменьшен временной интервал</system:String>
     <!--time limit-->
-    <system:String x:Key="EventTimeLimitInc">time INC Rus</system:String>
-    <system:String x:Key="EventTimeLimitDec">time DEC Rus</system:String>
+    <system:String x:Key="EventTimeLimitInc">Увеличено время наблюдения</system:String>
+    <system:String x:Key="EventTimeLimitDec">Уменьшено время наблюдения</system:String>
+
+
+
+    <system:String x:Key="EpidemicExample">Выбран пример эпидемии, число восприимчивых лиц падает быстро, поскольку многие из них инфицированы и, таким образом, попадают в инфекционные и восстановленные популяции. 
+        Болезнь не может вспыхнуть снова до тех пор, пока количество восприимчивости не восстановится в результате рождения потомства в восприимцивой популяции.</system:String>
+    <system:String x:Key="EquilibriumExample">Выбран пример вымирания инфекции, число зараженных субъектов стремится к нулю</system:String>
 
 </ResourceDictionary>

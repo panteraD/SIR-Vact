@@ -67,14 +67,14 @@
     </dependentAssembly>
   </dependency>
   <dependency>
-    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="mainWindow.exe" size="296448">
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="mainWindow.exe" size="305152">
       <assemblyIdentity name="mainWindow" version="1.0.0.0" language="neutral" processorArchitecture="msil" />
       <hash>
         <dsig:Transforms>
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-        <dsig:DigestValue>1SV43RTyLGH4bP6ZK9e+k8ggOhKUywbuFsFOgLKL8uY=</dsig:DigestValue>
+        <dsig:DigestValue>LnMpycR/4+DSxgjuq2UltWJcMyBG5mQvteJHupfxbpo=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>
