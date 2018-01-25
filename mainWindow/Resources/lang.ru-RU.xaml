@@ -24,6 +24,30 @@
     <system:String x:Key="Time">Время</system:String>
     <system:String x:Key="PopulationFraction">Популяция</system:String>
 
-    <system:String x:Key="m_menu_Language">Язык</system:String>
+    
+    <!--beta - transmission rate-->
+    <system:String x:Key="EventBetaInc">Beta inc Rus</system:String>
+    <system:String x:Key="EventBetaDec">Beta dec Rus</system:String>
+    <!--gamma recovery rate-->
+    <system:String x:Key="EventGammaInc">Gamma Inc Rus</system:String>
+    <system:String x:Key="EventGammaDec">gamma dec Rus</system:String>
+    <!--Mu death rate-->
+    <system:String x:Key="EventMuInc">mu inc Rus</system:String>
+    <system:String x:Key="EventMuDec">mu dec Rus</system:String>
+    <!--P vacc covergage-->
+    <system:String x:Key="EventPInc">p inc Rus</system:String>
+    <system:String x:Key="EventPDec">p dec Rus</system:String>
+    <!--infected faction-->
+    <system:String x:Key="EventIInc">I inc Rus</system:String>
+    <system:String x:Key="EventIDec">I dec Rus</system:String>
+    <!--Suseptiple faction-->
+    <system:String x:Key="EventSInc">S inc Rus</system:String>
+    <system:String x:Key="EventSDec">S dec Rus</system:String>
+    <!--time step-->
+    <system:String x:Key="EventTimeStepInc">timeS inc Rus</system:String>
+    <system:String x:Key="EventTimeStepDec">timeS dec Rus</system:String>
+    <!--time limit-->
+    <system:String x:Key="EventTimeLimitInc">time INC Rus</system:String>
+    <system:String x:Key="EventTimeLimitDec">time DEC Rus</system:String>
 
 </ResourceDictionary>

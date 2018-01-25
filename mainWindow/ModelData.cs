@@ -1,8 +1,15 @@
-﻿using System.Collections.Generic;
+﻿using System;
+using System.Collections.Generic;
 using System.ComponentModel;
+using System.Globalization;
 using System.Linq;
+using System.Reflection;
+using System.Resources;
+using System.Threading;
+using System.Windows;
 using Microsoft.Research.Oslo;
 using OxyPlot;
+using Vector = Microsoft.Research.Oslo.Vector;
 
 namespace mainWindow
 {
@@ -22,7 +29,11 @@ namespace mainWindow
         private double step;
         private double timeLimit;
 
+        private string helpText;
+
         #region Bindings
+
+
 
 
 
@@ -31,7 +42,10 @@ namespace mainWindow
             get { return beta; }
             set
             {
+                double oldValue = beta;
                 beta = value;
+                HelpText = (oldValue - beta) > 0 ? getLocalizedHelpMessage("EventBetaDec") : getLocalizedHelpMessage("EventBetaInc");
+
                 R0 = Beta / (Gamma + Mu);
                 OnPropertyChanged("Beta");
             }
@@ -42,7 +56,9 @@ namespace mainWindow
             get { return mu; }
             set
             {
+                double oldValue = mu;
                 mu = value;
+                HelpText = (oldValue - mu) > 0 ? getLocalizedHelpMessage("EventMuDec") : getLocalizedHelpMessage("EventMuInc");
                 R0 = Beta / (Gamma + Mu);
                 F = (double)Mu / (Gamma + Mu);
                 OnPropertyChanged("Mu");
@@ -54,7 +70,9 @@ namespace mainWindow
             get { return gamma; }
             set
             {
+                double oldValue = gamma;
                 gamma = value;
+                HelpText = (oldValue - gamma) > 0 ? getLocalizedHelpMessage("EventGammaDec") : getLocalizedHelpMessage("EventGammaInc");
                 R0 = Beta / (Gamma + Mu);
                 F = (double)Mu / (Gamma + Mu);
                 OnPropertyChanged("Gamma");
@@ -86,7 +104,9 @@ namespace mainWindow
             get { return p; }
             set
             {
+                double oldValue = p;
                 p = value;
+                HelpText = (oldValue - p) > 0 ? getLocalizedHelpMessage("EventPDec") : getLocalizedHelpMessage("EventPInc");
                 OnPropertyChanged("P");
             }
         }
@@ -96,7 +116,9 @@ namespace mainWindow
             get { return step; }
             set
             {
+                double oldValue = step;
                 step = value;
+                HelpText = (oldValue - step) > 0 ? getLocalizedHelpMessage("EventTimeStepDec") : getLocalizedHelpMessage("EventTimeStepInc");
                 OnPropertyChanged("Step");
             }
         }
@@ -106,7 +128,9 @@ namespace mainWindow
             get { return timeLimit; }
             set
             {
+                double oldValue = timeLimit;
                 timeLimit = value;
+                HelpText = (oldValue - timeLimit) > 0 ? getLocalizedHelpMessage("EventTimeLimitDec") : getLocalizedHelpMessage("EventTimeLimitInc");
                 OnPropertyChanged("TimeLimit");
             }
         }
@@ -116,8 +140,10 @@ namespace mainWindow
             get { return suseptipleFaction; }
             set
             {
+                double oldValue = suseptipleFaction;
                 suseptipleFaction = value;
                 InfectedFaction = 1 - suseptipleFaction;
+                HelpText = (oldValue - suseptipleFaction) > 0 ? getLocalizedHelpMessage("EventSDec") : getLocalizedHelpMessage("EventSInc");
                 OnPropertyChanged("SuseptipleFaction");
             }
         }
@@ -132,7 +158,34 @@ namespace mainWindow
             }
         }
 
+        public string HelpText
+        {
+            get { return helpText; }
+            set
+            {
+                helpText = value;
+                OnPropertyChanged("HelpText");
+            }
+        }
+
         #endregion
+
+        private string getLocalizedHelpMessage(String key)
+        {
+            CultureInfo currectCulture = Thread.CurrentThread.CurrentCulture;
+            if (currectCulture.ToString().Equals(mainWindow.MainWindow.ENGLISH))
+            {
+                ResourceDictionary rd = System.Windows.Application.Current.Resources.MergedDictionaries[0];
+                object theValue = rd[key];
+                return (string)theValue;
+            }
+            else
+            {
+                ResourceDictionary rd = System.Windows.Application.Current.Resources.MergedDictionaries[1];
+                object theValue = rd[key];
+                return (string)theValue;
+            }
+        }
 
         public event PropertyChangedEventHandler PropertyChanged;
 

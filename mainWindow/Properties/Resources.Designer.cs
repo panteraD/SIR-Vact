@@ -91,15 +91,5 @@ namespace mainWindow.Properties {
                 return ResourceManager.GetString("StringResourcesRUS", resourceCulture);
             }
         }
-        
-        /// <summary>
-        ///   Looks up a localized resource of type System.Drawing.Icon similar to (Icon).
-        /// </summary>
-        internal static System.Drawing.Icon Virus {
-            get {
-                object obj = ResourceManager.GetObject("Virus", resourceCulture);
-                return ((System.Drawing.Icon)(obj));
-            }
-        }
     }
 }

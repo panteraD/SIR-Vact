@@ -6,6 +6,7 @@
         xmlns:dc="clr-namespace:mainWindow"
         xmlns:oxy="http://oxyplot.org/wpf"
         mc:Ignorable="d"
+        Icon="Images\favicon.ico"
         WindowStartupLocation="Manual"
         Left="0"
         Top="0"
@@ -40,7 +41,11 @@
                                 <ColumnDefinition Width="320"></ColumnDefinition>
                                 <ColumnDefinition></ColumnDefinition>
                             </Grid.ColumnDefinitions>
-                            <dc:Container FlowDirection="LeftToRight" Grid.Column="0">
+                            <Grid.RowDefinitions>
+                                <RowDefinition></RowDefinition>
+                                <RowDefinition></RowDefinition>
+                            </Grid.RowDefinitions>
+                            <dc:Container FlowDirection="LeftToRight" Grid.Column="0" Grid.Row="0">
                                 <Label Content="{DynamicResource ModelParamerts}"></Label>
                                 <dc:LabelTextBox Label="{DynamicResource SuseptibleFraction}" Text="{Binding Data.SuseptipleFaction, StringFormat={}0.####}" ManipulationCompleted="UIElement_OnManipulationCompleted" Width="Auto"/>
                                 <dc:LabelTextBox Label="{DynamicResource InfectedFraction}" Text="{Binding Data.InfectedFaction, StringFormat={}0.####}"    ManipulationCompleted="UIElement_OnManipulationCompleted" Width="Auto"/>
@@ -62,7 +67,7 @@
                                     <MenuItem x:Name="menuLanguage" Header="{DynamicResource m_menu_Language}" />
                                 </Menu>-->
                             </dc:Container>
-                            <dc:Container Grid.Column="1">
+                            <dc:Container Grid.Column="1" Grid.Row="0">
                                 <Label Height="26"></Label>
                                 <Slider Height="44" Minimum="0" Maximum="1" Value="{Binding Data.SuseptipleFaction}" ValueChanged="RangeBase_OnValueChanged" VerticalAlignment="Center" RenderTransformOrigin="0.499,0.716" Margin="10,0"></Slider>
                                 <Label Height="9"></Label>
@@ -74,6 +79,13 @@
                                 <Slider Minimum="0.01" Maximum="1"  Value="{Binding Data.Step}" ValueChanged="RangeBase_OnValueChanged" Height="27" Margin="10,0"  />
                                 <Slider Minimum="1" Maximum="500" Value="{Binding Data.TimeLimit}" ValueChanged="RangeBase_OnValueChanged" Height="33" Margin="10,0" />
                             </dc:Container>
+
+                            <Border Grid.Row="1" Grid.ColumnSpan="2"  BorderThickness="2" BorderBrush="BlanchedAlmond">
+                                <StackPanel>
+                                    <Label Content="{DynamicResource ModelParamerts}"></Label>
+                                    <TextBlock Text="{Binding Data.HelpText}"></TextBlock>
+                                </StackPanel>
+                            </Border>
                         </Grid>
 
                     </Border>

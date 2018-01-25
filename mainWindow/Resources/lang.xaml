@@ -28,8 +28,32 @@
     <system:String x:Key="PopulationFraction">Population Fraction</system:String>
 
 
+    <!--beta - transmission rate-->
+    <system:String x:Key="EventBetaInc">Beta inc</system:String>
+    <system:String x:Key="EventBetaDec">Beta dec</system:String>
+    <!--gamma recovery rate-->
+    <system:String x:Key="EventGammaInc">Gamma Inc</system:String>
+    <system:String x:Key="EventGammaDec">gamma dec</system:String>
+    <!--Mu death rate-->
+    <system:String x:Key="EventMuInc">mu inc</system:String>
+    <system:String x:Key="EventMuDec">mu dec</system:String>
+    <!--P vacc covergage-->
+    <system:String x:Key="EventPInc">p inc</system:String>
+    <system:String x:Key="EventPDec">p dec</system:String>
+    <!--infected faction-->
+    <system:String x:Key="EventIInc">I inc</system:String>
+    <system:String x:Key="EventIDec">I dec</system:String>
+    <!--Suseptiple faction-->
+    <system:String x:Key="EventSInc">S inc</system:String>
+    <system:String x:Key="EventSDec">S dec</system:String>
+    <!--time step-->
+    <system:String x:Key="EventTimeStepInc">timeS inc</system:String>
+    <system:String x:Key="EventTimeStepDec">timeS dec</system:String>
+    <!--time limit-->
+    <system:String x:Key="EventTimeLimitInc">time INC</system:String>
+    <system:String x:Key="EventTimeLimitDec">time DEC</system:String>
+    
 
-    <system:String x:Key="m_menu_Language">Language</system:String>
 
 
 

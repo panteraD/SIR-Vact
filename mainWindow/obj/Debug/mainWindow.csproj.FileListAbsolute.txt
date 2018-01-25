@@ -158,7 +158,7 @@ D:\Users\chern\Desktop\Учеба\5 курс\Непр матмодели\SIR-Vac
 D:\Users\chern\Desktop\Учеба\5 курс\Непр матмодели\SIR-Vact\mainWindow\obj\Debug\mainWindow.TrustInfo.xml
 D:\Users\chern\Desktop\Учеба\5 курс\Непр матмодели\SIR-Vact\mainWindow\obj\Debug\mainWindow.exe.manifest
 D:\Users\chern\Desktop\Учеба\5 курс\Непр матмодели\SIR-Vact\mainWindow\obj\Debug\mainWindow.application
-D:\Users\chern\Desktop\Учеба\5 курс\Непр матмодели\SIR-Vact\mainWindow\obj\Debug\mainWindow.csprojResolveAssemblyReference.cache
 D:\Users\chern\Desktop\Учеба\5 курс\Непр матмодели\SIR-Vact\mainWindow\obj\Debug\App.baml
 D:\Users\chern\Desktop\Учеба\5 курс\Непр матмодели\SIR-Vact\mainWindow\obj\Debug\Resources\lang.baml
 D:\Users\chern\Desktop\Учеба\5 курс\Непр матмодели\SIR-Vact\mainWindow\obj\Debug\Resources\lang.ru-RU.baml
+D:\Users\chern\Desktop\Учеба\5 курс\Непр матмодели\SIR-Vact\mainWindow\obj\Debug\mainWindow.csprojResolveAssemblyReference.cache

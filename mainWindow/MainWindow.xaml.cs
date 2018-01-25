@@ -19,8 +19,8 @@ namespace mainWindow
 
         private String currentLang;
 
-        private const String ENGLISH = "en-US";
-        private const String RUSSIAN = "ru-RU";
+        public const String ENGLISH = "en-US";
+        public const String RUSSIAN = "ru-RU";
 
         public MainWindow()
         {
@@ -123,6 +123,7 @@ namespace mainWindow
             this.Resources.MergedDictionaries.Clear();
             this.Resources.MergedDictionaries.Add(dict);
             redrawPlot();
+            viewModel.RemoveHelpText();
         }
 
 

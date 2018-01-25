@@ -118,6 +118,11 @@ namespace mainWindow
             _data.TimeLimit = 5;
         }
 
+        public void RemoveHelpText()
+        {
+            _data.HelpText = "";
+        }
+
 
         #region Plottting methods
 
