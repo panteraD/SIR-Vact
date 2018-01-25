@@ -30,7 +30,7 @@
             <TabItem Header="{DynamicResource ModelTab}">
                 <Grid>
                     <Grid.ColumnDefinitions>
-                        <ColumnDefinition Width="550"  />
+                        <ColumnDefinition Width="615"  />
                         <ColumnDefinition Width="400*" />
                     </Grid.ColumnDefinitions>
 
@@ -74,7 +74,7 @@
                                 <Slider Minimum="0" Maximum="1" Value="{Binding Data.Beta}" ValueChanged="RangeBase_OnValueChanged" Height="30" Margin="10,0" />
                                 <Slider Minimum="0.001" Maximum="0.6" Value="{Binding Data.Mu}" ValueChanged="RangeBase_OnValueChanged" Height="26" Margin="10,0" />
                                 <Slider Minimum="0" Maximum="1" Value="{Binding Data.Gamma}" ValueChanged="RangeBase_OnValueChanged" Height="24" Margin="10,0" />
-                                <Label Height="28"></Label>
+                                <Label Content="{Binding Data.R0Assumption}"  Height="28"></Label>
                                 <Slider Minimum="0" Maximum="1" Value="{Binding Data.P}" ValueChanged="RangeBase_OnValueChanged" Height="26" Margin="0,0,10,0" />
                                 <Slider Minimum="0.01" Maximum="1"  Value="{Binding Data.Step}" ValueChanged="RangeBase_OnValueChanged" Height="27" Margin="10,0"  />
                                 <Slider Minimum="1" Maximum="50" Value="{Binding Data.TimeLimit}" ValueChanged="RangeBase_OnValueChanged" Height="33" Margin="10,0" />
@@ -96,11 +96,19 @@
                 </Grid>
             </TabItem>
 
-            <TabItem Header="{DynamicResource TheoryTab}">
+            <TabItem  Header="{DynamicResource TheoryTab}">
                 <DocumentViewer x:Name="TheoryDocumentViewer">
 
                 </DocumentViewer>
             </TabItem>
+
+            <TabItem  Header="{DynamicResource AboutTab}">
+                <DocumentViewer x:Name="GuideDocumentViewer">
+
+                </DocumentViewer>
+            </TabItem>
+
+
 
         </TabControl>
     </Grid>

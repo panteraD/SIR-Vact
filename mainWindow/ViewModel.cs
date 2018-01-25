@@ -123,6 +123,7 @@ namespace mainWindow
         public void RemoveHelpText()
         {
             _data.HelpText = "";
+            _data.R0Assumption = "";
         }
 
         public void SetHelpText(String text)

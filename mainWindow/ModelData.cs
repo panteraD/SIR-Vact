@@ -30,6 +30,7 @@ namespace mainWindow
         private double timeLimit;
 
         private string helpText;
+        private string r0Assumption;
 
         #region Bindings
 
@@ -85,6 +86,7 @@ namespace mainWindow
             set
             {
                 r0 = value;
+                R0Assumption = r0 >= 1 ? getLocalizedHelpMessage("R0More1") : getLocalizedHelpMessage("R0Less1");
                 OnPropertyChanged("R0");
             }
         }
@@ -165,6 +167,16 @@ namespace mainWindow
             {
                 helpText = value;
                 OnPropertyChanged("HelpText");
+            }
+        }
+
+        public string R0Assumption
+        {
+            get { return r0Assumption; }
+            set
+            {
+                r0Assumption = value;
+                OnPropertyChanged("R0Assumption");
             }
         }
 

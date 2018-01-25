@@ -5,14 +5,15 @@
     <system:String x:Key="Title">SIR Epidemic Model with vaccination</system:String>
     <system:String x:Key="ModelTab">Model</system:String>
     <system:String x:Key="TheoryTab">Theory</system:String>
+    <system:String x:Key="AboutTab">About</system:String>
 
     <system:String x:Key="ModelParamerts">Model Parameters</system:String>
-    <system:String x:Key="SuseptibleFraction">Suseptible Fraction</system:String>
+    <system:String x:Key="SuseptibleFraction">Susceptible Fraction</system:String>
     <system:String x:Key="InfectedFraction">Infected Fraction</system:String>
     <system:String x:Key="Beta">β(Contact Rate)</system:String>
-    <system:String x:Key="Mu">μ(Death Rate)</system:String>
+    <system:String x:Key="Mu">μ(Death Rate by natural causes)</system:String>
     <system:String x:Key="Gamma">γ(Recovery Rate)</system:String>
-    <system:String x:Key="R0">R_0(Basic Recovery Rate)</system:String>
+    <system:String x:Key="R0">R_0(basic reproduction number)</system:String>
     <system:String x:Key="P">P(Vaccination Coverage)</system:String>
     <system:String x:Key="TimeStep">Time Step</system:String>
     <system:String x:Key="TimeLimit">Time Limit</system:String>
@@ -22,25 +23,29 @@
     <system:String x:Key="EventLabel">Events</system:String>
 
 
-    <system:String x:Key="Suseptible">Suseptible</system:String>
+    <system:String x:Key="Suseptible">Susceptible</system:String>
     <system:String x:Key="Infected">Infected</system:String>
-    <system:String x:Key="Released">Released</system:String>
+    <system:String x:Key="Released">Recovered</system:String>
     <system:String x:Key="Time">Time</system:String>
     <system:String x:Key="PopulationFraction">Population Fraction</system:String>
 
 
     <!--beta - transmission rate-->
-    <system:String x:Key="EventBetaInc">β parameter has been increased. It determents transmission rate of infection spread from Infected to Suseptible individuals</system:String>
-    <system:String x:Key="EventBetaDec">β parameter has been decreased. It determents rate of infection spread from Infected to Suseptible individuals</system:String>
+    <system:String x:Key="EventBetaInc">β parameter has been increased. It determines the rate of infection spread from Infected to Suseptible subjects.
+        Maximum number of Infected will be increased, and number of susceptible siubjects reduced</system:String>
+    <system:String x:Key="EventBetaDec">β parameter has been decreased. It determines the rate of infection spread from Infected to Suseptible subjects.
+        Maximum number of Infected will be increased, and number of susceptible siubjects reduced</system:String>
     <!--gamma recovery rate-->
-    <system:String x:Key="EventGammaInc">γ parameter has been increased. It determents recovery rate of Infected individuals</system:String>
-    <system:String x:Key="EventGammaDec">γ parameter has been decreased. It determents recovery rate of Infected individuals</system:String>
+    <system:String x:Key="EventGammaInc">γ parameter has been increased. It determines recovery rate of Infected individuals. With higher values chance of ourbreak increases</system:String>
+    <system:String x:Key="EventGammaDec">γ parameter has been decreased. It determines recovery rate of Infected individuals. With lesser values chance of ourbreak decreases</system:String>
     <!--Mu death rate-->
-    <system:String x:Key="EventMuInc">γ parameter has been increased. It determents rate of natural death</system:String>
-    <system:String x:Key="EventMuDec">γ parameter has been decreased. It determents rate of natural death</system:String>
+    <system:String x:Key="EventMuInc">γ parameter has been increased. It determents rate of death (by natural causes) or life expectancy. 
+        The time of the individual's presence in the general population will decrease, as a result rate of disease spread  will decrease</system:String>
+    <system:String x:Key="EventMuDec">γ parameter has been decreased. It determents rate of death (by natural causes) or life expectancy.
+        The time of the individual's presence in the general population will increase, as a result rate of disease spread  will increase</system:String>
     <!--P vacc covergage-->
-    <system:String x:Key="EventPInc">p parameter has been increased. It's vaccination coverage, proportion of population which is immunized</system:String>
-    <system:String x:Key="EventPDec">p parameter has been decreased. It's Vaccination coverage, proportion of population which is immunized</system:String>
+    <system:String x:Key="EventPInc">p parameter has been increased. It's vaccination coverage, portion of population which is immunized(transfered to Recovered class). Number of Recovered individuals and rate of Infected fraction will increase</system:String>
+    <system:String x:Key="EventPDec">p parameter has been decreased. It's vaccination coverage, portion of population which is immunized(transfered to Recovered class). Number of Recovered individuals and rate of Infected fraction will decrease</system:String>
     <!--infected faction-->
     <system:String x:Key="EventIInc">I inc</system:String>
     <system:String x:Key="EventIDec">I dec</system:String>
@@ -57,6 +62,11 @@
 
     <system:String x:Key="EpidemicExample">Example of Epidemic outbreak has been selected. Fraction of Suseptible individuals is being reduced drasticly</system:String>
     <system:String x:Key="EquilibriumExample">Example of Equilibrium has been selected. Fraction of Infected indiviuals is declining to zero, while suseptible fraction remains almost the same</system:String>
+
+
+
+    <system:String x:Key="R0More1">Disease is likety to outbreak</system:String>
+    <system:String x:Key="R0Less1">Disease is likely to die off</system:String>
 
 
 

@@ -1,16 +1,18 @@
 ﻿<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
                     xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
                     xmlns:system="clr-namespace:System;assembly=mscorlib">
-    <system:String x:Key="Title">Модель эпидемми SIR с вакцинацией</system:String>
+    <system:String x:Key="Title">Модель распространения эпидемии SIR с вакцинацией</system:String>
     <system:String x:Key="ModelTab">Модель</system:String>
     <system:String x:Key="TheoryTab">Теория</system:String>
+    <system:String x:Key="AboutTab">Справка</system:String>
+
     <system:String x:Key="ModelParamerts">Параметры модели</system:String>
-    <system:String x:Key="SuseptibleFraction">Пропорция воспиимчивых особей</system:String>
+    <system:String x:Key="SuseptibleFraction">Пропорция восприимчивых особей</system:String>
     <system:String x:Key="InfectedFraction">Пропорция зараженных особей</system:String>
     <system:String x:Key="Beta">β(Частота контактов)</system:String>
     <system:String x:Key="Mu">μ(Частота смертности)</system:String>
     <system:String x:Key="Gamma">γ(Скорость выздоравливания)</system:String>
-    <system:String x:Key="R0">R_0(Базовая скорость выздоравливания)</system:String>
+    <system:String x:Key="R0">R_0(Базовое число воспроизведения)</system:String>
     <system:String x:Key="P">P(Охват вакцинации)</system:String>
     <system:String x:Key="TimeStep">Интервал времени</system:String>
     <system:String x:Key="TimeLimit">Время наблюдения</system:String>
@@ -25,19 +27,19 @@
     <system:String x:Key="Time">Время</system:String>
     <system:String x:Key="PopulationFraction">Популяция</system:String>
 
-    
+
     <!--beta - transmission rate-->
-    <system:String x:Key="EventBetaInc">Увеличен коэфиицент β, определяющий скорость распространения болезни между восприимчивыми и зараженными субъектами</system:String>
-    <system:String x:Key="EventBetaDec">Уменьшен коэфиицент β, определяющий скорость распространения болезни между восприимчивыми и зараженными субъектами</system:String>
+    <system:String x:Key="EventBetaInc">Увеличен коэффициент β, определяющий скорость распространения инфекции от зараженных к восприимчивым субъектам. Это увеличит максимальное число зараженных, и уменьшит конечное число восприимчивых индивидов</system:String>
+    <system:String x:Key="EventBetaDec">Уменьшен коэффициент β, определяющий скорость распространения инфекции от зараженных к восприимчивым субъектам. Это уменьшит максимальное число зараженных, и увеличит конечное число восприимчивых индивидов</system:String>
     <!--gamma recovery rate-->
-    <system:String x:Key="EventGammaInc">Увеличен коэфиицент γ, определяющий скорость выздоравливания субъектов (перехода от зараженного состояния (I) к восстановленому (R))</system:String>
-    <system:String x:Key="EventGammaDec">Уменьшен коэфиицент γ, определяющий скорость выздоравливания субъектов (перехода от зараженного состояния (I) к восстановленому (R))</system:String>
+    <system:String x:Key="EventGammaInc">Увеличен коэффициент γ, определяющий скорость выздоравливания субъектов (перехода от зараженного состояния (I) к восстановленному (R)). Чем выше этот параметр, тем выше шанс эпидемии</system:String>
+    <system:String x:Key="EventGammaDec">Уменьшен коэффициент γ, определяющий скорость выздоравливания субъектов (перехода от зараженного состояния (I) к восстановленному (R)). Чем ниже этот параметр, тем ниже шас эпидемии</system:String>
     <!--Mu death rate-->
-    <system:String x:Key="EventMuInc">Увеличен коэфиицент μ, определяющий частоту смертности (по естественным причинам)</system:String>
-    <system:String x:Key="EventMuDec">Уменьшен коэфиицент μ, определяющий частоту смертности (по естественным причинам)</system:String>
+    <system:String x:Key="EventMuInc">Увеличен коэффициент μ, определяющий частоту смертности (по естественным причинам). Время пребывания индивида в общей популяции уменьшится, как следствие скорость распространение эпидемии уменьшится</system:String>
+    <system:String x:Key="EventMuDec">Уменьшен коэффициент μ, определяющий частоту смертности (по естественным причинам). Время пребывания индивида в общей популяции увеличится, как следствие скорость распространение эпидемии увеличится</system:String>
     <!--P vacc covergage-->
-    <system:String x:Key="EventPInc">Увеличен коэфиицент p (0 &lt; p &lt; 1), определяющий охват вакцинации для новорожденных субъектов</system:String>
-    <system:String x:Key="EventPDec">Уменьшен коэфиицент p (0 &lt; p &lt; 1), определяющий охват вакцинации для новорожденных субъектов</system:String>
+    <system:String x:Key="EventPInc">Увеличен коэффициент p (0 &lt; p &lt; 1), определяющий охват вакцинации для новорожденных субъектов, что увеличит количесвто невосприимчивых индивидов и интенсивность уменьшения зараженных</system:String>
+    <system:String x:Key="EventPDec">Уменьшен коэффициент p (0 &lt; p &lt; 1), определяющий охват вакцинации для новорожденных субъектов, что уменьшит количество невосприимчивых индивидов и повысит количество зараженных</system:String>
     <!--infected faction-->
     <system:String x:Key="EventIInc">I inc Rus</system:String>
     <system:String x:Key="EventIDec">I dec Rus</system:String>
@@ -45,7 +47,7 @@
     <system:String x:Key="EventSInc">Увеличено начальное соотношение восприимчивых субъектов к зараженным</system:String>
     <system:String x:Key="EventSDec">Уменьшено начальное соотношение восприимчивых субъектов к зараженным</system:String>
     <!--time step-->
-    <system:String x:Key="EventTimeStepInc">Увеличен временной интервал, слишком большое занчение может привести к потере точности</system:String>
+    <system:String x:Key="EventTimeStepInc">Увеличен временной интервал, слишком большое значение может привести к потере точности</system:String>
     <system:String x:Key="EventTimeStepDec">Уменьшен временной интервал</system:String>
     <!--time limit-->
     <system:String x:Key="EventTimeLimitInc">Увеличено время наблюдения</system:String>
@@ -54,7 +56,10 @@
 
 
     <system:String x:Key="EpidemicExample">Выбран пример эпидемии, число восприимчивых лиц падает быстро, поскольку многие из них инфицированы и, таким образом, попадают в инфекционные и восстановленные популяции. 
-        Болезнь не может вспыхнуть снова до тех пор, пока количество восприимчивости не восстановится в результате рождения потомства в восприимцивой популяции.</system:String>
+        Болезнь не может вспыхнуть снова до тех пор, пока количество восприимчивости не восстановится в результате рождения потомства в восприимчивой популяции.</system:String>
     <system:String x:Key="EquilibriumExample">Выбран пример вымирания инфекции, число зараженных субъектов стремится к нулю</system:String>
+
+    <system:String x:Key="R0More1">Инфекция скорее всего перерастет в эпидемию</system:String>
+    <system:String x:Key="R0Less1">Инфекция будет побеждена</system:String>
 
 </ResourceDictionary>
